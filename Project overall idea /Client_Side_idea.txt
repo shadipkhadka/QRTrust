@@ -1,0 +1,17 @@
+USER SIDE
+
+User receives PDF
+        ↓
+Scans QR code
+        ↓
+QR opens public verification page
+        ↓
+User uploads the PDF they received
+        ↓
+QRTrust calculates SHA-256 again
+        ↓
+Compares new hash with stored original hash
+        ↓
+Verifies digital signature using public key
+        ↓
+Shows result

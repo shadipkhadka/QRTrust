@@ -1,0 +1,21 @@
+TRUSTED ISSUER SIDE
+
+Issuer creates original PDF
+        ↓
+Uploads PDF to QRTrust
+        ↓
+QRTrust calculates SHA-256 hash
+        ↓
+QRTrust signs the hash with issuer's private key
+        ↓
+Creates unique Document ID
+        ↓
+Stores:
+- document hash
+- signature
+- issuer info
+- status
+        ↓
+Generates QR code
+        ↓
+QR code is placed on document
